@@ -27,10 +27,10 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 
 # カーソルの移動速度を変更 （1〜15）
 defaults write -g com.apple.trackpad.scaling -float 15
 
-# Finder:隠しファイル/フォルダを表示
+# Finder で隠しファイル/フォルダを表示
 #defaults write com.apple.finder AppleShowAllFiles true
 
-# Finder:拡張子を表示
+# Finder で拡張子を表示
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # キーのリピート と リピート入力認識までの時間 のカスタマイズ
@@ -51,6 +51,8 @@ if [ ! -x "`which brew`" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
 fi
+brew doctor
+brew update  #update homebrew itself
 
 
 ###########################################
@@ -70,14 +72,14 @@ fi
 ###########################################
 # by mas-cli
 ###########################################
-mas install 497799835 # Xcode
-#mas install 414298354 #ToyViewer
-#mas install 539883307 # LINE
-#mas install 803453959 # Slack
-#mas install 405399194 # Kindle
-#mas install 410628904 # Wunderlist
-#mas install 406056744 # Evernote
-#mas install 1349670778 #Mathpix
+mas install 497799835    # Xcode
+#mas install 414298354    #ToyViewer
+#mas install 539883307    # LINE
+#mas install 803453959    # Slack
+#mas install 405399194    # Kindle
+#mas install 410628904    # Wunderlist
+#mas install 406056744    # Evernote
+#mas install 1349670778   #Mathpix
 
 
 ###########################################
@@ -87,7 +89,7 @@ mas install 497799835 # Xcode
 #brew install gnuplot
 brew install gcc
 #brew install tmux
-brew install git
+#brew install git
 #brew install vim
 #brew install nkf
 #brew install imagemagick
@@ -120,6 +122,12 @@ brew cask install mactex
 
 
 ###########################################
+# upgrade packages installed by brew
+###########################################
+brew upgrade
+
+
+###########################################
 # download dotflies from git
 ###########################################
 #git clone https://github.com/your_name/dotfiles.git
@@ -128,43 +136,43 @@ brew cask install mactex
 ###########################################
 # gnuplot
 ###########################################
-#====================
+#==========================================
 # 環境構築用ディレクトリの作成
-#====================
+#==========================================
 cd ~
-mkdir gnuplot_downloads
+mkdir gnuplot_downloads  #作業ディレクトリ
 cd gnuplot_downloads
 
 
-#====================
+#==========================================
 # gnuplot-5.2.5 のダウンロード
-#====================
+#==========================================
 curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/gnuplot-5.2.5.tar.gz/download/ > gnuplot.tar.gz
 #curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.0/gnuplot-5.2.0.tar.gz/download/ > gnuplot.tar.gz
 tar xvf gnuplot.tar.gz
 
 
-#====================
+#==========================================
 # lua のダウンロード
-#====================
+#==========================================
 brew install lua
 
 
-#====================
+#==========================================
 # lua のヘッダファイルのダウンロード
-#====================
+#==========================================
 git clone https://github.com/lua/lua -b v5.3.5
 
 
-#====================
+#==========================================
 # Aqua のダウンロード
-#====================
+#==========================================
 git clone https://github.com/mojca/aquaterm_aquaterm.git
 
 
-#====================
+#==========================================
 # ヘッダファイルの移動
-#====================
+#==========================================
 mv aquaterm_aquaterm AquaTerm
 mv AquaTerm ~/gnuplot_downloads/gnuplot-5.2.5/term
 mv ~/gnuplot_downloads/lua/lua.h ~/gnuplot_downloads/gnuplot-5.2.5/term
@@ -173,9 +181,9 @@ mv ~/gnuplot_downloads/lua/lualib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 mv ~/gnuplot_downloads/lua/lauxlib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 
 
-#====================
+#==========================================
 # make
-#====================
+#==========================================
 cd ~/gnuplot_downloads/gnuplot-5.2.5
 #CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm
 CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm --with-x11
@@ -184,7 +192,12 @@ sudo make install
 cd
 
 
-#====================
-# gnuplot_downloads を消す
-#====================
+#==========================================
+# 作業ディレクトリを消す
+#==========================================
 rm -rf gnuplot_downloads
+
+
+###########################################
+# END
+###########################################
