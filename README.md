@@ -44,7 +44,7 @@ Additional packages (
 
 ) are commented out. 
 
-If you would like to install them, please edit the downloaded shell script on your local directory BEFORE execute the shell script.
+If you would like to install them, please edit the downloaded shell script on your local directory BEFORE you execute the shell script.
 
 
 ## Features
