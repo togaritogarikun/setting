@@ -71,7 +71,7 @@ but the qt will be used to display.
 ## Installation
 '''
 % cd
-% git clone 
+% git clone https://github.com/togaritogarikun/setting.git
 % chmod 777 labpc_setting.sh
 % ./labpc_setting.sh
 '''
