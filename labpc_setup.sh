@@ -1,5 +1,5 @@
 ###########################################
-# システム環境設定
+# mac preference
 ###########################################
 
 # スクロールバーの表示:スクロール時に表示
@@ -39,13 +39,13 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 
 ###########################################
-# command line tools for xcode のインストール
+# INSTALL command line tools for xcode
 ###########################################
 xcode-select --install
 
 
 ###########################################
-# HomeBrewのインストール
+# INSTALL HomeBrew
 ###########################################
 if [ ! -x "`which brew`" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -56,13 +56,13 @@ brew update  #update homebrew itself
 
 
 ###########################################
-# HomeBrew-Caskのインストール
+# INSTALL HomeBrew-Cask
 ###########################################
 brew tap caskroom/cask
 
 
 ###########################################
-# mas-cliのインストール
+# INSTALL mas-cli
 ###########################################
 if [ ! -x "`which mas`" ]; then
   brew install mas
@@ -73,13 +73,13 @@ fi
 # by mas-cli
 ###########################################
 mas install 497799835    # Xcode
-#mas install 414298354    #ToyViewer
+#mas install 414298354    # ToyViewer
 #mas install 539883307    # LINE
 #mas install 803453959    # Slack
 #mas install 405399194    # Kindle
 #mas install 410628904    # Wunderlist
 #mas install 406056744    # Evernote
-#mas install 1349670778   #Mathpix
+#mas install 1349670778   # Mathpix
 
 
 ###########################################
@@ -137,15 +137,15 @@ brew upgrade
 # gnuplot
 ###########################################
 #==========================================
-# 環境構築用ディレクトリの作成
+# make working directory
 #==========================================
 cd ~
-mkdir gnuplot_downloads  #作業ディレクトリ
+mkdir gnuplot_downloads
 cd gnuplot_downloads
 
 
 #==========================================
-# gnuplot-5.2.5 のダウンロード
+# DOWNLOAD gnuplot-5.2.5
 #==========================================
 curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/gnuplot-5.2.5.tar.gz/download/ > gnuplot.tar.gz
 #curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.0/gnuplot-5.2.0.tar.gz/download/ > gnuplot.tar.gz
@@ -153,25 +153,25 @@ tar xvf gnuplot.tar.gz
 
 
 #==========================================
-# lua のダウンロード
+# DOWNLOAD lua
 #==========================================
 brew install lua
 
 
 #==========================================
-# lua のヘッダファイルのダウンロード
+#DOWNLOAD header files of lua
 #==========================================
 git clone https://github.com/lua/lua -b v5.3.5
 
 
 #==========================================
-# Aqua のダウンロード
+# DOWNLOAD aquaterm
 #==========================================
 git clone https://github.com/mojca/aquaterm_aquaterm.git
 
 
 #==========================================
-# ヘッダファイルの移動
+# MOVE header files
 #==========================================
 mv aquaterm_aquaterm AquaTerm
 mv AquaTerm ~/gnuplot_downloads/gnuplot-5.2.5/term
@@ -182,7 +182,7 @@ mv ~/gnuplot_downloads/lua/lauxlib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 
 
 #==========================================
-# make
+# MAKE
 #==========================================
 cd ~/gnuplot_downloads/gnuplot-5.2.5
 #CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm
@@ -193,7 +193,7 @@ cd
 
 
 #==========================================
-# 作業ディレクトリを消す
+# REMOVE working directory
 #==========================================
 rm -rf gnuplot_downloads
 
