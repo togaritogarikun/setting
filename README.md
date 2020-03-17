@@ -48,7 +48,7 @@ If you would like to install them, please edit the downloaded shell script on yo
 
 
 ## Features
-##### About gnuplot
+#### About gnuplot
 Today (March 17, 2020), following command
 
     % brew install gnuplot --with-aquaterm --with-x11
