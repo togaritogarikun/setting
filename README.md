@@ -53,7 +53,7 @@ Today (March 17, 2020), following command
 
     % brew install gnuplot --with-aquaterm --with-x11
 
-does not work well with the latest macOS when you download gnuplot.
+does not work well with the recent macOS when you download gnuplot.
 
 Therefore, in this shell script, 
 gnuplot will be installed not by homebrew.
