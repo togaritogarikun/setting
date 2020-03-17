@@ -7,7 +7,7 @@ Contents installed using this shell script are as follows:
 - mac preference
 - command line tools for xcode
 - homebrew
-- homeBrew-Cask
+- homebrew-cask
 - mas-cli
 - xcode
 - gcc
