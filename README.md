@@ -78,7 +78,7 @@ but the qt will be used to display.
 
     % chmod 777 labpc_setting.sh
 
-    % ./labpc_setting.sh
+    % ./labpc_setup.sh
 
 
 ### END OF README ###
