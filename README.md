@@ -58,6 +58,7 @@ does not work well with the latest macOS when you download gnuplot.
 Therefore, in this shell script, 
 gnuplot will be installed not by homebrew.
 
+
 If your macOS is catalina, 
 you may install gnuplot by
 
