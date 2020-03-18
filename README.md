@@ -67,9 +67,9 @@ you may install gnuplot by the following command without any option:
 But the qt will be used to display, not x11 or aquaterm.
 
 
-## Requirements
-- git
+## Prerequisites
 - sign in with your Apple ID
+- git
 
 
 ## Installation
