@@ -84,5 +84,9 @@ When you would like to set up your mac using this shell script, enter following 
     % ./labpc_setup.sh
 
 
+## License
+MIT
+
+
 ____
 END OF README
