@@ -79,6 +79,8 @@ When you would like to set up your mac using this shell script, enter following 
     % cd
 
     % git clone https://github.com/togaritogarikun/setting.git
+    
+    % cd setting
 
     % chmod 777 MDEsetting.sh
 
@@ -97,7 +99,11 @@ Please be careful that oGsetting.sh sets up the environment for gnuplot, after i
 
 #### Installation
 
+    % cd
+
     % git clone https://github.com/togaritogarikun/setting.git
+    
+    % cd setting
     
     % chmod 777 oGsetting.sh
 
