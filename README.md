@@ -1,5 +1,5 @@
 # MDEsetting
-This shell script constracts the Mac Development Environment in your new pc.
+This shell script (MDEsetting.sh) constracts the Mac Development Environment in your new pc.
 
 
 ## Description
@@ -79,9 +79,9 @@ When you would like to set up your mac using this shell script, enter following 
 
     % git clone https://github.com/togaritogarikun/setting.git
 
-    % chmod 777 labpc_setting.sh
+    % chmod 777 MDEsetting.sh
 
-    % ./labpc_setup.sh
+    % ./MDEsetting.sh
 
 
 ## License
