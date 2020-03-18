@@ -87,7 +87,3 @@ When you would like to set up your mac using this shell script, enter following 
 
 ## License
 MIT
-
-
-____
-END OF README
