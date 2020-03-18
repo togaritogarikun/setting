@@ -17,7 +17,7 @@ Contents installed using this shell script are as follows:
 - gnuplot5.2.5
 - lua
 
-Additional packages (
+The commands for the installation of additional contents (
 - toyviewer
 - line
 - slack
@@ -60,11 +60,11 @@ gnuplot will be installed not by homebrew.
 
 
 If your macOS is catalina, 
-you may install gnuplot by
+you may install gnuplot by the following command without any option: 
 
     % brew install gnuplot
 
-but the qt will be used to display.
+But the qt will be used to display, not x11 or aquaterm.
 
 
 ## Requirements
@@ -72,6 +72,7 @@ but the qt will be used to display.
 
 
 ## Installation
+When you would like to set up your mac using this shell script, enter following commands on the terminal of your mac:
 
     % cd
 
@@ -82,4 +83,5 @@ but the qt will be used to display.
     % ./labpc_setup.sh
 
 
-### END OF README ###
+____________________
+END OF README
