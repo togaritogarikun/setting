@@ -84,7 +84,9 @@ When you would like to set up your mac using this shell script, enter following 
 
     % ./MDEsetting.sh
 
+You will be required to enter the password of your mac.
+
 
 ## Appendix: oGsetting.sh
 If you would like to download ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
-oGsetting.sh sets up the environment for gnuplot, after it UNINSTALLS old gnuplot and lua you have downloaded on your mac, using homebrew.
+Please be careful that oGsetting.sh sets up the environment for gnuplot, after it UNINSTALLS old gnuplot and lua you have downloaded on your mac, using homebrew (e.g. % brew uninstall gnuplot).
