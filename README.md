@@ -76,7 +76,7 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 ## Installation
 When you would like to set up your mac using this shell script, enter following commands on the terminal of your mac:
 
-#### In the case of doqnloading ONLY MDEsetting.sh
+#### In the case of downloading ONLY MDEsetting.sh
 
     % cd
     
