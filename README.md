@@ -1,4 +1,4 @@
-# setting
+# MDEsetting
 This shell script constracts the Mac Development Environment in your new pc.
 
 
