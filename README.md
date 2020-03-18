@@ -1,5 +1,5 @@
 # MDEsetting
-This shell script (MDEsetting.sh) constracts the Mac Development Environment in your new pc.
+MDEsetting.sh is the shell script which constracts the Mac Development Environment in your new pc.
 
 
 ## Description
@@ -85,5 +85,6 @@ When you would like to set up your mac using this shell script, enter following 
     % ./MDEsetting.sh
 
 
-## License
-MIT
+## Appendix: oGsetting.sh
+If you would like to download ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
+oGsetting.sh sets up the environment for gnuplot, after it UNINSTALLS old gnuplot and lua you have downloaded on your mac, using homebrew.
