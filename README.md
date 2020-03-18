@@ -64,7 +64,8 @@ you may install gnuplot by the following command without any option:
 
     % brew install gnuplot
 
-But the qt will be used to display, not x11 or aquaterm.
+In this case, the default terminal is qt, not AquaTerm or x11.
+If you would like to change the default terminal, edit ~/.gnuplot adding 'set term xxx' (xxx: name of terminal you choosed).
 
 
 ## Prerequisites
