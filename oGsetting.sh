@@ -9,6 +9,8 @@
 #==========================================
 # UNINSTALL old gnuplot & lua
 #==========================================
+brew update
+
 type gnuplot > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
     echo uninstall old gnuplot
