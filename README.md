@@ -69,6 +69,7 @@ But the qt will be used to display, not x11 or aquaterm.
 
 ## Requirements
 - git
+- sign in with your Apple ID
 
 
 ## Installation
@@ -83,5 +84,5 @@ When you would like to set up your mac using this shell script, enter following 
     % ./labpc_setup.sh
 
 
-____________________
+____
 END OF README
