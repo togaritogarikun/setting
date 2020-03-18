@@ -98,7 +98,7 @@ When you would like to set up your mac using this shell script, enter following 
 
     % ./MDEsetting.sh
 
-You will be required to enter the password of your mac in both cases.
+You will be required to enter the password of your mac in both cases, because 'make install' will be executed with 'sudo'.
 
 
 ## Appendix: oGsetting.sh
@@ -131,3 +131,5 @@ In the case of downloading repository:
     % chmod 777 oGsetting.sh
 
     % ./oGsetting.sh
+
+You will be required to enter the password of your mac in both cases, because 'make install' will be executed with 'sudo'.
