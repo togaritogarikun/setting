@@ -3,7 +3,7 @@ MDEsetting.sh is the shell script which constracts the Mac Development Environme
 
 
 ## Description
-Packages installed using this shell script are as follows:
+Packages which will be installed using this shell script are as follows:
 - mac preference
 - command line tools for xcode
 - homebrew
@@ -44,7 +44,7 @@ The commands for the installation of additional packages (
 
 ) are commented out. 
 
-If you would like to install all or part of them, please edit the downloaded shell script on your local directory BEFORE you execute the shell script.
+If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute the shell script.
 
 
 ## Features
