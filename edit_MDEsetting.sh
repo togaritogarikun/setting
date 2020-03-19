@@ -3,7 +3,7 @@
 #                                                            #
 #    This shell script enables you to edit MDEsetting.sh.    #
 #    Enter following command on the terminal:                #
-#    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_MDE.sh)"
+#    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
 ##############################################################
 cd
 
