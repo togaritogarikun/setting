@@ -6,11 +6,6 @@
 #    Enter following command on the terminal:              #
 #    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
 ############################################################
-
-
-#####################
-#    execute_MDE    #
-#####################
 cd
 
 git clone https://github.com/togaritogarikun/setting.git
