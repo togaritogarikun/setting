@@ -156,7 +156,8 @@ brew upgrade
 ###########################################
 # gnuplot
 ###########################################
-    sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
+#    sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
+    sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/oGsetting.sh)"
 
 ###########################################
 #printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
