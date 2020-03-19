@@ -84,15 +84,9 @@ You will be required to enter the password of your mac, because 'make install' w
 #### In the case of editing shell script BEFORE executing it
 Enter the following commands on the terminal of your mac:
 
-    % cd
+    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
     
-    % git clone https://github.com/togaritogarikun/setting.git
-    
-    % cd setting
-    
-    % chmod 777 MDEsetting.sh
-    
-    % vi MDEsetting.sh
+    % cd ~/eMDEs
     
 here, please edit the script file, then execute it:
     
