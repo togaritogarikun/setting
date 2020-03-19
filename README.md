@@ -75,12 +75,28 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 
 
 ## Installation
-When you would like to set up your mac using this shell script, enter following commands on the terminal of your mac:
+When you would like to set up your mac using this shell script, enter following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_MDE.sh)"
 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
+#### In the case of editing shell script BEFORE executing it
+Enter following commands on the terminal of your mac:
+
+    % cd
+    
+    % git clone https://github.com/togaritogarikun/setting.git
+    
+    % cd setting
+    
+    % chmod 777 MDEsetting.sh
+    
+    % vi MDEsetting.sh
+    
+here, please edit the script file, then execute it:
+    
+    % ./MDEsetting.sh
 
 ## Appendix: oGsetting.sh
 If you would like to download ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
@@ -92,7 +108,7 @@ Please be careful that oGsetting.sh sets up the environment for gnuplot, after i
 - curl
 
 #### Installation
-In the case of downloading only oGsetting.sh:
+Please enter following command:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
 
