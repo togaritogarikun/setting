@@ -13,18 +13,26 @@ printf '\033[33m%s\033[m\n' 'updating homebrew'
 
 brew update
 
+printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
+
 type gnuplot > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
     printf '\033[33m%s\033[m\n' 'uninstalling old gnuplot'
 #    echo uninstall old gnuplot
     brew uninstall gnuplot
+else
+    printf '\033[33m%s\033[m\n' 'gnuplot does not exist'
 fi
+
+printf '\033[33m%s\033[m\n' 'checking if lua exists'
 
 type lua > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    printf '\033[33m%s\033[m\n' 'uninstalling oil lua'
+    printf '\033[33m%s\033[m\n' 'uninstalling old lua'
 #    echo uninstall old lua
     brew uninstall lua
+else
+    printf '\033[33m%s\033[m\n' 'lua does not exist'
 fi
 
 
