@@ -156,18 +156,21 @@ brew upgrade
 ###########################################
 # gnuplot
 ###########################################
-printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
-
-type gnuplot > /dev/null 2>&1                                                                                                                                                                               
-if [ $? -eq 0 ] ; then 
-    printf '\033[33m%s\033[m\n' 'gnuplot already exists'
-    printf '\033[33m%s\033[m\n' 'end!'
-else
-    printf '\033[33m%s\033[m\n' 'gnuplot does not exist'
-    printf '\033[33m%s\033[m\n' 'start of gnuplot-download'
     sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
-    printf '\033[33m%s\033[m\n' 'end!'
-fi
+
+###########################################
+#printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
+#
+#type gnuplot > /dev/null 2>&1                                                                                    
+#if [ $? -eq 0 ] ; then 
+#    printf '\033[33m%s\033[m\n' 'gnuplot already exists'
+#    printf '\033[33m%s\033[m\n' 'end!'
+#else
+#    printf '\033[33m%s\033[m\n' 'gnuplot does not exist'
+#    printf '\033[33m%s\033[m\n' 'start of gnuplot-download'
+#    sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
+#    printf '\033[33m%s\033[m\n' 'end!'
+#fi
 
 
 ############################################

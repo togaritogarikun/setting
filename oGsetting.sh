@@ -10,18 +10,20 @@
 # UNINSTALL old gnuplot & lua
 #==========================================
 printf '\033[33m%s\033[m\n' 'updating homebrew'
-
 brew update
 
 printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
 
 type gnuplot > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    printf '\033[33m%s\033[m\n' 'uninstalling old gnuplot'
-#    echo uninstall old gnuplot
-    brew uninstall gnuplot
+    printf '\033[33m%s\033[m\n' 'gnuplot already exits'
+    printf '\033[33m%s\033[m\n' 'end!'
+    exit
+#    printf '\033[33m%s\033[m\n' 'uninstalling old gnuplot'
+#    brew uninstall gnuplot
 else
     printf '\033[33m%s\033[m\n' 'gnuplot does not exist'
+    printf '\033[33m%s\033[m\n' 'start of gnuplot downloading'
 fi
 
 printf '\033[33m%s\033[m\n' 'checking if lua exists'
