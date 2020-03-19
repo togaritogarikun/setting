@@ -6,6 +6,7 @@
 ###########################################
 # mac preference
 ###########################################
+printf '\033[33m%s\033[m\n' 'setting mac preference'
 
 # スクロールバーの表示:スクロール時に表示
 #defaults write -g AppleShowScrollBars -string "WhenScrolling"
@@ -46,12 +47,16 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ###########################################
 # INSTALL command line tools for xcode
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing command line tools for xcode'
+
 xcode-select --install
 
 
 ###########################################
 # INSTALL HomeBrew
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing homebrew'
+
 if [ ! -x "`which brew`" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
@@ -63,12 +68,16 @@ brew update  #update homebrew itself
 ###########################################
 # INSTALL HomeBrew-Cask
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing homebrew cask'
+
 brew tap caskroom/cask
 
 
 ###########################################
 # INSTALL mas-cli
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing mas-cli'
+
 if [ ! -x "`which mas`" ]; then
   brew install mas
 fi
@@ -77,6 +86,8 @@ fi
 ###########################################
 # by mas-cli
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing packages by mas-cli'
+
 mas install 497799835    # Xcode
 #mas install 414298354    # ToyViewer
 #mas install 539883307    # LINE
@@ -90,6 +101,8 @@ mas install 497799835    # Xcode
 ###########################################
 # by homebrew
 ###########################################
+printf '\033[33m%s\033[m\n' 'installing packages by homebrew'
+
 ##brew install gnuplot --with-aquaterm --with-x11
 #brew install gnuplot
 brew install gcc
@@ -129,6 +142,8 @@ brew cask install mactex
 ###########################################
 # upgrade packages installed by brew
 ###########################################
+printf '\033[33m%s\033[m\n' 'updating homebrew'
+
 brew upgrade
 
 
@@ -141,6 +156,7 @@ brew upgrade
 ###########################################
 # gnuplot
 ###########################################
+printf '\033[33m%s\033[m\n' 'start of gnuplot-download'
 #==========================================
 # make working directory
 #==========================================
@@ -152,6 +168,8 @@ cd gnuplot_downloads
 #==========================================
 # DOWNLOAD gnuplot-5.2.5
 #==========================================
+printf '\033[33m%s\033[m\n' 'installing gnuplot-5.2.0'
+
 curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/gnuplot-5.2.5.tar.gz/download/ > gnuplot.tar.gz
 #curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.0/gnuplot-5.2.0.tar.gz/download/ > gnuplot.tar.gz
 tar xvf gnuplot.tar.gz
@@ -160,6 +178,8 @@ tar xvf gnuplot.tar.gz
 #==========================================
 # DOWNLOAD lua
 #==========================================
+printf '\033[33m%s\033[m\n' 'installing lua'
+
 brew install lua
 
 
@@ -172,6 +192,8 @@ git clone https://github.com/lua/lua -b v5.3.5
 #==========================================
 # DOWNLOAD aquaterm
 #==========================================
+printf '\033[33m%s\033[m\n' 'installing aquaterm'
+
 git clone https://github.com/mojca/aquaterm_aquaterm.git
 
 
@@ -189,6 +211,8 @@ mv ~/gnuplot_downloads/lua/lauxlib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 #==========================================
 # MAKE
 #==========================================
+printf '\033[33m%s\033[m\n' 'make & make install'
+
 cd ~/gnuplot_downloads/gnuplot-5.2.5
 #CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm
 CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm --with-x11
@@ -203,6 +227,7 @@ cd
 rm -rf gnuplot_downloads
 
 
+printf '\033[33m%s\033[m\n' 'end!'
 ###########################################
 # END
 ###########################################

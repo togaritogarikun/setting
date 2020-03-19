@@ -9,17 +9,21 @@
 #==========================================
 # UNINSTALL old gnuplot & lua
 #==========================================
+printf '\033[33m%s\033[m\n' 'updating homebrew'
+
 brew update
 
 type gnuplot > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    echo uninstall old gnuplot
+    printf '\033[33m%s\033[m\n' 'uninstalling old gnuplot'
+#    echo uninstall old gnuplot
     brew uninstall gnuplot
 fi
 
 type lua > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    echo uninstall old lua
+    printf '\033[33m%s\033[m\n' 'uninstalling oil lua'
+#    echo uninstall old lua
     brew uninstall lua
 fi
 
@@ -35,6 +39,8 @@ cd gnuplot_downloads
 #==========================================
 # DOWNLOAD gnuplot-5.2.5
 #==========================================
+printf '\033[33m%s\033[m\n' 'downloading gnuplot-5.2.0'
+
 curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/gnuplot-5.2.5.tar.gz/download/ > gnuplot.tar.gz
 #curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.0/gnuplot-5.2.0.tar.gz/download/ > gnuplot.tar.gz
 tar xvf gnuplot.tar.gz
@@ -43,6 +49,8 @@ tar xvf gnuplot.tar.gz
 #==========================================
 # DOWNLOAD lua
 #==========================================
+printf '\033[33m%s\033[m\n' 'installing lua'
+
 brew install lua
 
 
@@ -55,6 +63,8 @@ git clone https://github.com/lua/lua -b v5.3.5
 #==========================================
 # DOWNLOAD aquaterm
 #==========================================
+printf '\033[33m%s\033[m\n' 'installing aquaterm'
+
 git clone https://github.com/mojca/aquaterm_aquaterm.git
 
 
@@ -72,6 +82,8 @@ mv ~/gnuplot_downloads/lua/lauxlib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 #==========================================
 # MAKE
 #==========================================
+printf '\033[33m%s\033[m\n' 'make & make install'
+
 cd ~/gnuplot_downloads/gnuplot-5.2.5
 #CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm
 CFLAGS='-I/usr/local/include' LDFLAGS='-F/Library/Frameworks' ./configure --with-readline=builtin --with-aquaterm --with-x11
@@ -86,6 +98,7 @@ cd
 rm -rf gnuplot_downloads
 
 
+printf '\033[33m%s\033[m\n' 'end!'
 ###########################################
 # END
 ###########################################
