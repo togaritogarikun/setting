@@ -16,4 +16,4 @@ curl -O https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsett
 
 chmod 777 MDEsetting.sh
 
-printf '\033[33m%s\033[m\n' 'Edit MDEsetting.sh and then execute it'
+printf '\033[33m%s\033[m\n' 'Edit ~/eMDEs/MDEsetting.sh and then execute it'
