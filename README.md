@@ -108,7 +108,7 @@ Please be careful that oGsetting.sh sets up the environment for gnuplot, after i
 - curl
 
 #### Installation
-Please enter following command:
+Please enter following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
 
