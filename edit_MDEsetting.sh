@@ -7,9 +7,9 @@
 ##############################################################
 cd
 
-mkdir MDEsetting2
+mkdir eMDEs
 
-cd MDEsetting2
+cd eMDEs
 
 #git clone https://github.com/togaritogarikun/setting.git
 curl -O https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh
