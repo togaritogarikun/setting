@@ -2,7 +2,7 @@
 #    execute_test                              #
 #                                              #
 #    This shell script tests execute_xxx.sh    #
-#    % sh -c "$(curl -sSL)"    #
+#    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_test.sh)"    #
 ################################################
 
 
