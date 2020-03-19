@@ -77,7 +77,7 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 ## Installation
 When you would like to set up your mac using this shell script (MDEsetting.sh), enter the following command on the terminal of your mac:
 
-    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_MDE.sh)"
+    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh)"
 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
