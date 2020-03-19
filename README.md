@@ -110,6 +110,6 @@ When you download gnuplot using this shell script (oGsetting.sh), please be care
 #### Installation
 Please enter the following command on the terminal of your mac:
 
-    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
+    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/oGsetting.sh)"
 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
