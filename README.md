@@ -71,6 +71,7 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 ## Prerequisites
 - sign in with your Apple ID
 - git
+- curl
 
 
 ## Installation
@@ -88,10 +89,11 @@ Please be careful that oGsetting.sh sets up the environment for gnuplot, after i
 #### Prerequisites
 - git
 - homebrew
+- curl
 
 #### Installation
 In the case of downloading only oGsetting.sh:
 
-    % 
+    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
