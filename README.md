@@ -3,7 +3,7 @@ MDEsetting.sh is the shell script which constracts the Mac Development Environme
 
 
 ## Description
-Contents installed using this shell script are as follows:
+Packages installed using this shell script are as follows:
 - mac preference
 - command line tools for xcode
 - homebrew
@@ -17,7 +17,7 @@ Contents installed using this shell script are as follows:
 - gnuplot5.2.5
 - lua
 
-The commands for the installation of additional contents (
+The commands for the installation of additional packages (
 - toyviewer
 - line
 - slack
@@ -49,7 +49,7 @@ If you would like to install them, please edit the downloaded shell script on yo
 
 ## Features
 #### About gnuplot
-Today (March 17, 2020), following command
+Today (March 17, 2020), the following command
 
     % brew install gnuplot --with-aquaterm --with-x11
 
@@ -75,14 +75,14 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 
 
 ## Installation
-When you would like to set up your mac using this shell script, enter following command on the terminal of your mac:
+When you would like to set up your mac using this shell script (MDEsetting.sh), enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_MDE.sh)"
 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
 #### In the case of editing shell script BEFORE executing it
-Enter following commands on the terminal of your mac:
+Enter the following commands on the terminal of your mac:
 
     % cd
     
@@ -108,7 +108,7 @@ Please be careful that oGsetting.sh sets up the environment for gnuplot, after i
 - curl
 
 #### Installation
-Please enter following command on the terminal of your mac:
+Please enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/execute_oG.sh)"
 
