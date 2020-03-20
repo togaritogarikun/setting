@@ -18,4 +18,4 @@ chmod 777 MDEsetting.sh
 
 printf '\033[33m%s\033[m\n' 'Edit ~/eMDEs/MDEsetting.sh and then execute it'
 
-#vi MDEsetting.sh
+vi MDEsetting.sh
