@@ -96,7 +96,7 @@ then, you can edit the script file by vim:
 
 - To save edited file and quit the vim-editor, type **:wq** and press **Enter** key
 
-The shell script will run by entering the following command:
+The shell script will be run by entering the following command:
     
     % ./MDEsetting.sh
 
