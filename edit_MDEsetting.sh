@@ -5,11 +5,11 @@
 #    Enter following command on the terminal:                #
 #    % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
 ##############################################################
-cd
+#cd
 
-mkdir eMDEs
+#mkdir eMDEs
 
-cd eMDEs
+#cd eMDEs
 
 #git clone https://github.com/togaritogarikun/setting.git
 curl -O https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh
