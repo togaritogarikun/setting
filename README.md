@@ -94,7 +94,7 @@ then, you can edit the script file by vim:
 
 - From insert mode to command mode, type **Esc** (escape key)
 
-- To save edited file and quit the vim-editor, type **:wq**
+- To save edited file and quit the vim-editor, type **:wq** and press Enter key
 
 The shell script will run by entering the following command:
     
