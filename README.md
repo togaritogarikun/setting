@@ -88,9 +88,13 @@ Enter the following commands on the terminal of your mac, and the script file wi
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
     
-then, you can edit the script file by vim AFTER typing 'i' on vim.
+then, you can edit the script file by vim.
 
-In order to save the edited file by vim, press ESC key, type ':wq', and press the Enter key.
+- From command mode to insert mode, type i
+
+- From insert mode to command mode, type Esc (escape key)
+
+- To save edited file and quit the vim-editor, type :wq
 
 The shell script will run by entering the following command:
     
