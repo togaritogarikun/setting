@@ -82,13 +82,17 @@ When you would like to set up your mac using this shell script (MDEsetting.sh), 
 You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
 #### In the case of editing shell script BEFORE executing it
-Enter the following commands on the terminal of your mac:
+Enter the following commands on the terminal of your mac, and the script file will be open automatically to edit:
+
+    % cd
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
     
-    % cd ~/eMDEs
-    
-here, please edit the script file, then execute it:
+then, you can edit the script file by vim AFTER typing 'i' on vim.
+
+In order to save the edited file by vim, press ESC key, type ':wq', and press the Enter key.
+
+The shell script will run by entering the following command:
     
     % ./MDEsetting.sh
 
