@@ -92,9 +92,9 @@ then, you can edit the script file by vim:
 
 - From command mode to insert mode, type **i**
 
-- From insert mode to command mode, type **Esc** (escape key)
+- From insert mode to command mode, type **Esc** key
 
-- To save edited file and quit the vim-editor, type **:wq** and press Enter key
+- To save edited file and quit the vim-editor, type **:wq** and press **Enter** key
 
 The shell script will run by entering the following command:
     
