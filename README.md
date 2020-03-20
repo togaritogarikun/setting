@@ -90,11 +90,11 @@ Enter the following commands on the terminal of your mac, and the script file wi
     
 then, you can edit the script file by vim.
 
-- From command mode to insert mode, type i
+- From command mode to insert mode, type **i**
 
-- From insert mode to command mode, type Esc (escape key)
+- From insert mode to command mode, type **Esc** (escape key)
 
-- To save edited file and quit the vim-editor, type :wq
+- To save edited file and quit the vim-editor, type **:wq**
 
 The shell script will run by entering the following command:
     
