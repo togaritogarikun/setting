@@ -1,4 +1,4 @@
-# MDEsetting
+# MDEsetting（macの環境設定）
 MDEsetting.sh is the shell script which constracts the Mac Development Environment in your new mac.
 
 
