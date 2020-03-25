@@ -70,7 +70,6 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 
 ## Prerequisites
 - sign in with your Apple ID
-- git
 - curl
 
 
