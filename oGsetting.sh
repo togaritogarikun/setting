@@ -7,39 +7,51 @@
 # gnuplot
 ###########################################
 #==========================================
-# UNINSTALL old gnuplot & lua
+# CHECK existence of gnuplot, lua, & git
 #==========================================
 printf '\033[33m%s\033[m\n' 'updating homebrew'
 brew update
 
-printf '\033[33m%s\033[m\n' 'checking if gnuplot exists'
 
+#==== gnuplot
+printf '\033[33m%s\033[m\n' 'checking if gnuplot exists >'
 type gnuplot > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    printf '\033[33m%s\033[m\n' 'gnuplot already exits'
+    printf '\033[33m%s\033[m\n' 'gnuplot already exits >'
     printf '\033[33m%s\033[m\n' 'end!'
     exit
-#    printf '\033[33m%s\033[m\n' 'uninstalling old gnuplot'
-#    brew uninstall gnuplot
 else
-    printf '\033[33m%s\033[m\n' 'gnuplot does not exist'
+    printf '\033[33m%s\033[m\n' 'gnuplot does not exist >'
     printf '\033[33m%s\033[m\n' 'start of gnuplot downloading'
 fi
 
-printf '\033[33m%s\033[m\n' 'checking if lua exists'
 
+#==== lua
+printf '\033[33m%s\033[m\n' 'checking if lua exists >'
 type lua > /dev/null 2>&1                                                                                                                                                                               
 if [ $? -eq 0 ] ; then 
-    printf '\033[33m%s\033[m\n' 'uninstalling old lua'
-#    echo uninstall old lua
-    brew uninstall lua
+    printf '\033[33m%s\033[m\n' 'lua already exists'
 else
-    printf '\033[33m%s\033[m\n' 'lua does not exist'
+    printf '\033[33m%s\033[m\n' 'lua does not exist >'
+    printf '\033[33m%s\033[m\n' 'start of lua installing'
+    brew install lua
+fi
+
+
+#==== git
+printf '\033[33m%s\033[m\n' 'checking if git exists >'
+type git > /dev/null 2>&1                                                                                                                                                                               
+if [ $? -eq 0 ] ; then 
+    printf '\033[33m%s\033[m\n' 'git already exists'
+else
+    printf '\033[33m%s\033[m\n' 'git does not exist >'
+    printf '\033[33m%s\033[m\n' 'git will be installed'
+    brew install git
 fi
 
 
 #==========================================
-# make working directory
+# MAKE working directory
 #==========================================
 cd ~
 mkdir gnuplot_downloads
@@ -59,9 +71,9 @@ tar xvf gnuplot.tar.gz
 #==========================================
 # DOWNLOAD lua
 #==========================================
-printf '\033[33m%s\033[m\n' 'installing lua'
+#printf '\033[33m%s\033[m\n' 'installing lua'
 
-brew install lua
+#brew install lua
 
 
 #==========================================
@@ -90,7 +102,7 @@ mv ~/gnuplot_downloads/lua/lauxlib.h ~/gnuplot_downloads/gnuplot-5.2.5/term
 
 
 #==========================================
-# MAKE
+# MAKE install
 #==========================================
 printf '\033[33m%s\033[m\n' 'make & make install'
 
