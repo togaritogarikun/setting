@@ -102,13 +102,11 @@ The shell script will be run by entering the following command:
     % ./MDEsetting.sh
 
 ## Appendix: oGsetting.sh
-If you would like to download ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
-When you download gnuplot using this shell script (oGsetting.sh), please be carefull that lua you have downloaded will be uninstalled if it exists.
+If you would like to install ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
 
 #### Prerequisites
-- git
-- homebrew
 - curl
+- homebrew
 
 #### Installation
 Please enter the following command on the terminal of your mac:
