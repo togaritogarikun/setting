@@ -17,7 +17,7 @@ Packages which will be installed using this shell script are as follows:
 - gnuplot5.2.5
 - lua
 
-ommands for the installation of additional packages (
+Commands for the installation of additional packages (
 - toyviewer
 - line
 - slack
