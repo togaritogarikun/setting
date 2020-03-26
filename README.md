@@ -46,7 +46,7 @@ Commands for the installation of additional packages (
 
 If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute the shell script.
 
-See section Installation for more information.
+See section Installation for more information. <a href="#Installation">seehere</a>
 
 
 ## Features
