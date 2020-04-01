@@ -9,6 +9,7 @@ Packages which will be installed using this shell script are as follows:
 - homebrew
 - homebrew-cask
 - mas-cli
+- git
 - xcode
 - gcc
 - aquaterm
