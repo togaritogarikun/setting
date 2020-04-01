@@ -59,7 +59,7 @@ printf '\033[33m%s\033[m\n' 'installing homebrew'
 
 if [ ! -x "`which brew`" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  brew update
+#  brew update
 fi
 brew doctor
 brew update  #update homebrew itself
@@ -142,9 +142,11 @@ brew cask install mactex
 ###########################################
 # upgrade packages installed by brew
 ###########################################
-printf '\033[33m%s\033[m\n' 'updating homebrew'
+printf '\033[33m%s\033[m\n' 'updating installed pckages'
 
 brew upgrade
+brew cask upgrade
+mas upgrade
 
 
 ###########################################
