@@ -107,7 +107,7 @@ printf '\033[33m%s\033[m\n' 'installing packages by homebrew'
 #brew install gnuplot
 brew install gcc
 #brew install tmux
-#brew install git
+brew install git
 #brew install vim
 #brew install nkf
 #brew install imagemagick

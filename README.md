@@ -1,4 +1,4 @@
-# MDEsetting
+# MDEsetting（mac の環境設定と gnuplot のインストール）
 MDEsetting.sh is the shell script which constracts the Mac Development Environment in your new mac.
 
 
@@ -17,7 +17,7 @@ Packages which will be installed using this shell script are as follows:
 - gnuplot5.2.5
 - lua
 
-The commands for the installation of additional packages (
+Commands for the installation of additional packages (
 - toyviewer
 - line
 - slack
@@ -46,6 +46,8 @@ The commands for the installation of additional packages (
 
 If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute the shell script.
 
+See <a href="#In-the-case-of-editing-shell-script-BEFORE-executing-it">Installation</a> for more information.
+
 
 ## Features
 #### About gnuplot
@@ -70,7 +72,6 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 
 ## Prerequisites
 - sign in with your Apple ID
-- git
 - curl
 
 
@@ -88,22 +89,24 @@ Enter the following commands on the terminal of your mac, and the script file wi
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/edit_MDEsetting.sh)"
     
-then, you can edit the script file by vim AFTER typing 'i' on vim.
+then, you can edit the script file by vim:
 
-In order to save the edited file by vim, press ESC key, type ':wq', and press the Enter key.
+- From command mode to insert mode, type **i**
 
-The shell script will run by entering the following command:
+- From insert mode to command mode, type **Esc** key
+
+- To save edited file and quit the vim-editor, type **:wq** and press **Enter** key
+
+The shell script will be run by entering the following command:
     
     % ./MDEsetting.sh
 
 ## Appendix: oGsetting.sh
-If you would like to download ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
-When you download gnuplot using this shell script (oGsetting.sh), please be carefull that lua you have downloaded will be uninstalled if it exists.
+If you would like to install ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
 
 #### Prerequisites
-- git
-- homebrew
 - curl
+- homebrew
 
 #### Installation
 Please enter the following command on the terminal of your mac:
