@@ -45,7 +45,7 @@ Commands for the installation of additional packages (
 
 ) are commented out. 
 
-If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute the shell script.
+If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute it.
 
 See <a href="#In-the-case-of-editing-shell-script-BEFORE-executing-it">Installation</a> for more information.
 
