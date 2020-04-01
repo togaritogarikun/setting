@@ -59,7 +59,7 @@ Today (March 17, 2020), the following command
 does not work well with the recent macOS when you download gnuplot.
 
 Therefore, in this shell script, 
-older version of gnuplot (5.2.5) will be installed not by homebrew.
+the older version of gnuplot (5.2.5) will be installed not by homebrew.
 
 
 If your macOS is catalina, 
