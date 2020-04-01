@@ -61,7 +61,7 @@ cd gnuplot_downloads
 #==========================================
 # DOWNLOAD gnuplot-5.2.5
 #==========================================
-printf '\033[33m%s\033[m\n' 'downloading gnuplot-5.2.0'
+printf '\033[33m%s\033[m\n' 'downloading gnuplot-5.2.5'
 
 curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.5/gnuplot-5.2.5.tar.gz/download/ > gnuplot.tar.gz
 #curl -L https://sourceforge.net/projects/gnuplot/files/gnuplot/5.2.0/gnuplot-5.2.0.tar.gz/download/ > gnuplot.tar.gz
