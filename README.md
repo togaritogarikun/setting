@@ -72,8 +72,9 @@ If you would like to change the default terminal, edit ~/.gnuplot adding 'set te
 
 
 ## Prerequisites
-- sign in with your Apple ID
 - curl
+- sign in with your Apple ID
+- go to system preferences > Apple ID > Media & Purchases, and click "Never Require" for free downloads. (this is required to use mas-cli for downloading free softwares from App Store).
 
 
 ## Installation
