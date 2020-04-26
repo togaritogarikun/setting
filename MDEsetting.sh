@@ -23,7 +23,7 @@ esac
 
 ############
 echo ''
-printf '\033[33m%s\033[m\n' 'Have you signed in App Store with your Apple ID? [y/N]:     '
+printf '\033[33m%s\033[m\n' 'Have you signed in App Store with your Apple ID? [y/N]: '
 read ANS
 
 case $ANS in
