@@ -12,7 +12,7 @@ case $ANS in
   [Yy]* )
     ;;
   * )
-    printf '\033[33m%s\033[m\n' 'Please download curl before running this shell scri    pt.'
+    printf '\033[33m%s\033[m\n' 'Please download curl before running this shell script.'
     exit
     ;;
 esac
@@ -35,7 +35,7 @@ esac
 
 ############
 echo ''
-printf '\033[33m%s\033[m\n' 'Please go to system preferences > Apple ID > Media & Pu    rchases.'
+printf '\033[33m%s\033[m\n' 'Please go to system preferences > Apple ID > Media & Purchases.'
 printf '\033[33m%s\033[m\n' 'Is Never Require selected for free downloads? [y/N]: '
 read ANS
 
@@ -44,7 +44,7 @@ case $ANS in
     ;;
   * )
     printf '\033[33m%s\033[m\n' 'Please click Never Require for free downloads.'
-    printf '\033[33m%s\033[m\n' 'This is required to use mas-cli for downloading fre    e softwares from App Store.'
+    printf '\033[33m%s\033[m\n' 'This is required to use mas-cli for downloading free softwares from App Store.'
     exit
     ;;
 esac
