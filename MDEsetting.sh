@@ -6,7 +6,7 @@
 # CHECK prerequisties
 ###########################################                               
 printf '\033[33m%s\033[m\n' 'Is curl available? [y/N]: '
-printf '\033[33m%s\033[m\n' '(You can check it by typing following command: curl --version)'
+printf '\033[33m%s\033[m\n' '(You can check it by typing following command on the command line: curl --version)'
 read ANS
 
 case $ANS in
