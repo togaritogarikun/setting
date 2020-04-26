@@ -14,6 +14,8 @@ case $ANS in
     ;;
   * )
     printf '\033[33m%s\033[m\n' 'Please download curl before running this shell script.'
+    printf '\033[33m%s\033[m\n' 'To download it, visit following site:'
+    printf '\033[33m%s\033[m\n' 'https://curl.haxx.se/download.html'
     exit
     ;;
 esac
@@ -29,6 +31,8 @@ case $ANS in
     ;;
   * )
     printf '\033[33m%s\033[m\n' 'Please sign in.'
+    printf '\033[33m%s\033[m\n' 'If you do not have Apple ID, visit following site to create it:'
+    printf '\033[33m%s\033[m\n' 'https://support.apple.com/en-us/HT204316'
     exit
     ;;
 esac
