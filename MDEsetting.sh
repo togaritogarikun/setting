@@ -140,7 +140,7 @@ fi
 ###########################################
 printf '\033[33m%s\033[m\n' 'installing packages by mas-cli'
 
-mas install 497799835    # Xcode
+#mas install 497799835    # Xcode
 #mas install 414298354    # ToyViewer
 #mas install 539883307    # LINE
 #mas install 803453959    # Slack
