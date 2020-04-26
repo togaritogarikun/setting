@@ -2,6 +2,53 @@
 #   MDEsetting   #
 ##################
 
+###########################################                               
+# CHECK prerequisties
+###########################################                               
+printf '\033[33m%s\033[m\n' 'Is curl available? [y/N]: '
+read ANS
+
+case $ANS in
+  [Yy]* )
+    ;;
+  * )
+    printf '\033[33m%s\033[m\n' 'Please download curl before running this shell scri    pt.'
+    exit
+    ;;
+esac
+
+
+############
+echo ''
+printf '\033[33m%s\033[m\n' 'Have you signed in App Store with your Apple ID? [y/N]:     '
+read ANS
+
+case $ANS in
+  [Yy]* )
+    ;;
+  * )
+    printf '\033[33m%s\033[m\n' 'Please sign in.'
+    exit
+    ;;
+esac
+
+
+############
+echo ''
+printf '\033[33m%s\033[m\n' 'Please go to system preferences > Apple ID > Media & Pu    rchases.'
+printf '\033[33m%s\033[m\n' 'Is Never Require selected for free downloads? [y/N]: '
+read ANS
+
+case $ANS in
+  [Yy]* )
+    ;;
+  * )
+    printf '\033[33m%s\033[m\n' 'Please click Never Require for free downloads.'
+    printf '\033[33m%s\033[m\n' 'This is required to use mas-cli for downloading fre    e softwares from App Store.'
+    exit
+    ;;
+esac
+
 
 ###########################################
 # mac preference
