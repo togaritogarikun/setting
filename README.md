@@ -85,11 +85,11 @@ If you would like to use mas-cli,
 
 
 ## Installation
-When you would like to set up your mac using this shell script (MDEsetting.sh), enter the following command on the terminal of your mac:
+When you would like to set up your mac using this shell script (MDEsetting.sh) in the default form, enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh)"
 
-You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
+You will be sometimes required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
 #### In the case of editing shell script BEFORE executing it
 Enter the following commands on the terminal of your mac, and the script file will be open automatically to edit:
