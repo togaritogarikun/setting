@@ -122,4 +122,4 @@ Please enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/oGsetting.sh)"
 
-You will be required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
+You will be sometimes required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
