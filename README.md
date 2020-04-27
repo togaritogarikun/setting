@@ -1,5 +1,5 @@
 # MDEsetting（mac の環境設定と gnuplot のインストール）
-MDEsetting.sh is the shell script which constracts the Mac Development Environment in your new mac (initialized mac).
+MDEsetting.sh is the shell script which constracts the Mac Development Environment in your new or initialized mac.
 
 With the default MDEsetting.sh, you will use: homebrew, mas-cli, git, gcc compiler, Tex, and gnuplot. 
 
