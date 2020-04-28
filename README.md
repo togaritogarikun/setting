@@ -55,7 +55,7 @@ In such case, please install them from the App Store for the first time.
 
 
 ## Features
-#### About gnuplot
+#### ■ About gnuplot
 Today (March 17, 2020), the following command
 
     % brew install gnuplot --with-aquaterm --with-x11
@@ -85,13 +85,14 @@ If you would like to use mas-cli,
 
 
 ## Installation
+#### ■ In the case of using shell script by default
 When you would like to set up your mac using this shell script (MDEsetting.sh) in the default form, enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh)"
 
 You will be sometimes required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
-#### In the case of editing shell script BEFORE executing it
+#### ■ In the case of editing shell script BEFORE executing it
 Enter the following commands on the terminal of your mac, and the script file will be open automatically to edit:
 
     % cd
@@ -113,11 +114,11 @@ The shell script will be run by entering the following command:
 ## Appendix: oGsetting.sh
 If you would like to install ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
 
-#### Prerequisites
+#### ■ Prerequisites
 - curl
 - homebrew
 
-#### Installation
+#### ■ Installation
 Please enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/oGsetting.sh)"
