@@ -49,7 +49,7 @@ Commands for the installation of additional packages (
 
 If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute it.
 
-See [Installation](#baby_chick-Installation) for more information, in such case.
+See [Installation](#black_small_square-In-the-case-of-editing-shell-script-BEFORE-executing-it) for more information, in such case.
 
 Please note that applications you have never downloaded with Aplle ID you are seeking to use now can not be installed by the mas-cli (April 27, 2020). 
 In such case, please install them from the App Store for the first time.
@@ -57,7 +57,7 @@ In such case, please install them from the App Store for the first time.
 
 :baby_chick: Features
 =====================
-#### ■ About gnuplot
+#### :black_small_square: About gnuplot
 Today (March 17, 2020), the following command
 
     % brew install gnuplot --with-aquaterm --with-x11
@@ -89,14 +89,14 @@ If you would like to use mas-cli,
 
 :baby_chick: Installation
 =========================
-#### ■ In the case of using shell script by default
+#### :black_small_square: In the case of using shell script by default
 When you would like to set up your mac using this shell script (MDEsetting.sh) in the default form, enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/MDEsetting.sh)"
 
 You will be sometimes required to enter the password of your mac, because 'make install' will be executed with 'sudo'.
 
-#### ■ In the case of editing shell script BEFORE executing it
+#### :black_small_square: In the case of editing shell script BEFORE executing it
 Enter the following commands on the terminal of your mac, and the script file will be open automatically to edit:
 
     % cd
@@ -119,11 +119,11 @@ The shell script will be run by entering the following command:
 ===================================
 If you would like to install ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
 
-#### ■ Prerequisites
+#### :black_small_square: Prerequisites
 - curl
 - homebrew
 
-#### ■ Installation
+#### :black_small_square: Installation
 Please enter the following command on the terminal of your mac:
 
     % sh -c "$(curl -sSL https://raw.githubusercontent.com/togaritogarikun/setting/master/oGsetting.sh)"
