@@ -7,7 +7,7 @@ With the default MDEsetting.sh, you will be able to use following contents: home
 - [Features](#baby_chick-Features)
 - [Prerequisites](#baby_chick-Prerequisites)
 - [Installation](#baby_chick-Installation)
-- [Appendix (In the case of installing only gnuplot)](#baby_chick-Appendix:-oGsetting.sh)
+- [Appendix (In the case of installing only gnuplot)](#baby_chick-Appendix-oGsetting.sh)
 
 :baby_chick: Description
 ========================
