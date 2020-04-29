@@ -3,6 +3,12 @@ MDEsetting.sh is the shell script which constracts the Mac Development Environme
 
 With the default MDEsetting.sh, you will be able to use following contents: homebrew, mas-cli, git, gcc compiler, Tex, and gnuplot. 
 
+- [Description](#baby_chick-Description)
+- [Features](#baby_chick-Features)
+- [Prerequisites](#baby_chick-Prerequisites)
+- [Installation](#baby_chick-Installation)
+- [Appendix (In the case of installing only gnuplot)](#baby_chick-Appendix:-oGsetting.sh)
+
 :baby_chick: Description
 ========================
 Packages which will be installed using this shell script are as follows:
