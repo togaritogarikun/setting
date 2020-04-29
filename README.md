@@ -3,7 +3,8 @@ MDEsetting.sh is the shell script which constracts the Mac Development Environme
 
 With the default MDEsetting.sh, you will use: homebrew, mas-cli, git, gcc compiler, Tex, and gnuplot. 
 
-## Description
+:baby_chick: Description
+========================
 Packages which will be installed using this shell script are as follows:
 - mac preference
 - command line tools for xcode
@@ -48,13 +49,14 @@ Commands for the installation of additional packages (
 
 If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute it.
 
-See [Installation](#Installation) for more information, in such case.
+See [Installation](#baby_chick-Installation) for more information, in such case.
 
 Please note that applications you have never downloaded with Aplle ID you are seeking to use now can not be installed by the mas-cli (April 27, 2020). 
 In such case, please install them from the App Store for the first time.
 
 
-## Features
+:baby_chick: Features
+=====================
 #### ■ About gnuplot
 Today (March 17, 2020), the following command
 
@@ -75,7 +77,8 @@ In this case, the default terminal is qt, not AquaTerm or x11.
 If you would like to change the default terminal, edit ~/.gnuplot adding 'set term xxx' (xxx: name of terminal you choosed).
 
 
-## Prerequisites
+:baby_chick: Prerequisites
+==========================
 - curl
 - sign in with your Apple ID
 
@@ -84,7 +87,8 @@ If you would like to use mas-cli,
 - go to system preferences > Apple ID > Media & Purchases, and click "Never Require" for free downloads. (this is required to use mas-cli for downloading free softwares from App Store).
 
 
-## Installation
+:baby_chick: Installation
+=========================
 #### ■ In the case of using shell script by default
 When you would like to set up your mac using this shell script (MDEsetting.sh) in the default form, enter the following command on the terminal of your mac:
 
@@ -111,7 +115,8 @@ The shell script will be run by entering the following command:
     
     % ./MDEsetting.sh
 
-## Appendix: oGsetting.sh
+:baby_chick: Appendix: oGsetting.sh
+===================================
 If you would like to install ONLY gnuplot, please use oGsetting.sh, not MDEsetting.sh.
 
 #### ■ Prerequisites
