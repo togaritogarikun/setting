@@ -48,7 +48,7 @@ Commands for the installation of additional packages (
 
 If you would like to install all or part of them, please edit the downloaded shell script BEFORE you execute it.
 
-See <a href="#In-the-case-of-editing-shell-script-BEFORE-executing-it">Installation</a> for more information, in such case.
+See [Installation](#■-In-the-case-of-editing-shell-script-BEFORE-executing-it) for more information, in such case.
 
 Please note that applications you have never downloaded with Aplle ID you are seeking to use now can not be installed by the mas-cli (April 27, 2020). 
 In such case, please install them from the App Store for the first time.
