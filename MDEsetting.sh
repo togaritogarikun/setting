@@ -171,6 +171,7 @@ brew install git
 brew cask install aquaterm
 brew cask install xquartz
 brew cask install mactex
+brew cask install latest
 #brew cask install mendeley
 #brew cask install emacs
 #brew cask install atom
